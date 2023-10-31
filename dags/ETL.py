@@ -166,5 +166,5 @@ data_load= PythonOperator(
     dag = dag
 )
 
-collect_data>>clean_data>>data_load
+collect_data >> clean_data >> data_load
 
