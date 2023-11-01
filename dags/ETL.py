@@ -144,7 +144,7 @@ default_args = {
 dag = DAG(
     "ETL_DAG",
     default_args=default_args,
-    schedule_interval='* * 5 11 *',
+    schedule_interval='0 3 * * 0-4',
     catchup=False
 )
 
