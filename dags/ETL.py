@@ -138,13 +138,13 @@ def load_data():
 default_args = {
     'retries':1,
     'retry_delay':timedelta(minutes=2),
-    'start_date':local_tz.datetime(2023,10,18)
+    'start_date':local_tz.datetime(2023,11,1,8,0)
 }
 
 dag = DAG(
     "ETL_DAG",
     default_args=default_args,
-    schedule_interval=None,
+    schedule_interval='* * 5 11 *',
     catchup=False
 )
 
