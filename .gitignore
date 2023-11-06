@@ -3,3 +3,4 @@ dags/__pycache__
 logs/
 airflow-webserver.pid
 standalone_admin_password.txt
+.ipynb_checkpoints
